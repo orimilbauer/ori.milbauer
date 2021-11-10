@@ -1,0 +1,55 @@
+body{
+    background-color: lightgrey;
+}
+#GridContainer{
+    /* display define as grid. inline-grid is smaller  */
+    display: grid;
+    /* think how much rowX col need to be in the web design  */
+    grid-template-areas:
+     'header header header'
+     'left main main'
+     'left main main';
+}
+/* the header left main its name for my define */
+#item1 {
+    grid-area: header;
+    width: 100%;
+    /* vh is from the display of the screen . not of the container */
+    height: 33vh;
+    background-color: rgb(173, 119, 169);
+    padding:30px;
+    margin: 10px;
+}
+#item2 {
+    grid-area: left;
+    width: 100%;
+    height: 66vh;
+    background-color: rgb(161, 228, 213);
+    padding:30px;
+    margin: 10px;
+}
+#item3 {
+    grid-area: main;
+    width: 100%;
+    height: 66vh;
+    background-color: rgb(187, 69, 69);
+    padding:30px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: greenyellow ;
+    }
+    #GridContainer{
+        /* display define as grid. inline-grid is smaller  */
+        display: grid;
+        /* on mobile  */
+        grid-template-areas:
+         'header '
+         'main'
+         'left';
+    }
+    
+
+}

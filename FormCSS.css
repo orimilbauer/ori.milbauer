@@ -1,0 +1,16 @@
+/* rgb from google-color picker (can to copy and paste in the rgb  */
+/* defined the color as veriable  */
+:root{
+    --lightBlue: rgb(66, 135, 245);
+}
+*{
+    font-family: sans-myFirstFont;
+}
+.input {
+    background-color:var(--lightBlue)
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Roboto-Black.ttf);
+    }
